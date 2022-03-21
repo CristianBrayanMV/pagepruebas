@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/77cd000399.js" crossorigin="anonymous"></script>
+    <title>Viajes</title>
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <div class="nav-logo">
+                <span class="bar"></span>
+                <span class="logo">Travela</span>
+            </div>
+            <nav class="navegacion">
+                <ul class="lista">
+                    <li>Home</li>
+                    <li>Tour</li>
+                    <li>Hotel</li>
+                    <li>Places</li>
+                    <li>Contact Us</li>
+                    <li><button>Book now</button></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="title">
+            <h1>Discover The World With Us</h1>
+            <button>Start Tour</button>
+        </div>
+        <div class="destino">
+            <label>
+                Destination
+                <input type="text" placeholder="Elije tu destino">
+            </label>
+            <label>
+                Member
+                <input type="number" placeholder="1">
+            </label>
+            <label>
+                Check in Date
+                <input type="date">
+            </label>
+            <label>
+                Check out Date
+                <input type="date">
+            </label>
+            <div>
+                <button>Book New</button>
+
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section1">
+            <figure>
+                <img src="./img/peru.jpg" alt="">
+            </figure>
+            <div class="info">
+                <h2>Amezing Places to injoy your Travel</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor esse a nobis soluta hic repellendus, neque molestias dolorem saepe accusamus ducimus, commodi laudantium voluptatum consequatur? Aspernatur rerum perspiciatis assumenda in.
+                    <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor esse a nobis soluta hic repellendus, neque molestias dolorem saepe accusamus ducimus, commodi laudantium voluptatum consequatur? Aspernatur rerum perspiciatis assumenda in.
+                    <button>Explore More</button>
+                </p>
+            </div>
+        </section>
+        <section class="section2">
+            <div class="head">
+                    <h2>Beautiful Places of The World</h2>
+                    <div class="btn">
+                        <button>View all</button>
+                    </div>
+            </div>
+            <figure class="places">
+                <img src="./img/brazil.jpg" alt="brazil">
+                <img src="./img/egipto.jpg" alt="egipto">
+                <img src="./img/india.jpg" alt="india">
+            </figure>
+        </section>
+        <section class="section3">
+            <h2>What Our Client Say</h2>
+            <div class="message">
+                <div class="client">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae perferendis debitis, aspernatur eaque nobis sapiente maiores sequi alias enim accusamus eos veritatis rerum, dolorum odit nulla neque quidem soluta. Fugiat.
+                    </p>
+                    <div class="profile">
+                        <img src="./img/user.jpg" alt="usuario">
+                        <span>John Doe</span>
+                    </div>
+                </div>
+                <div class="client">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae perferendis debitis, aspernatur eaque nobis sapiente maiores sequi alias enim accusamus eos veritatis rerum, dolorum odit nulla neque quidem soluta. Fugiat.
+                    </p>
+                    <div class="profile">
+                        <img src="./img/user.jpg" alt="usuario">
+                        <span>John Doe</span>
+                    </div>
+                </div>
+                <div class="client">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae perferendis debitis, aspernatur eaque nobis sapiente maiores sequi alias enim accusamus eos veritatis rerum, dolorum odit nulla neque quidem soluta. Fugiat.
+                    </p>
+                    <div class="profile">
+                        <img src="./img/user.jpg" alt="usuario">
+                        <span>John Doe</span>
+                    </div>
+                </div>
+            </div>
+
+        </section>        
+    </main>
+    <footer>
+        &copy; Todos los derechos reservados 
+    </footer>
+    <script>
+        window.onload = ()=>{
+
+            const bar = document.querySelector('.bar');
+            const logo = document.querySelector('.nav-logo');
+            const body = document.querySelector('body');
+            const nav = document.querySelector('.navegacion');
+            
+            bar.addEventListener('click',function(){
+                
+                nav.classList.toggle("nav-left");
+                logo.classList.toggle("cover-logo");
+                body.classList.toggle('body-s');
+            });
+        };
+    </script>
+</body>
+</html>
